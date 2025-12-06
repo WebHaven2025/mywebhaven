@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pricing – Web Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="View Web Haven pricing at mywebhaven.com. Simple monthly plans that include your website, hosting, updates and ongoing support."
+  />
+
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            haven: {
+              navy: '#0F172A',
+              blue: '#2563EB',
+              aqua: '#06B6D4',
+              teal: '#14B8A6',
+              yellow: '#FACC15',
+              soft: '#F8FAFC',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-haven-navy text-slate-100 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER / NAV -->
+    <header class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-haven-blue via-haven-aqua to-haven-teal flex items-center justify-center shadow-lg shadow-haven-blue/40">
+              <span class="font-semibold text-sm tracking-tight">WH</span>
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span class="font-semibold text-sm sm:text-base">Web Haven</span>
+              <span class="text-[11px] text-slate-400 hidden sm:inline">Websites, hosting & care in one place.</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <nav class="hidden md:flex items-center gap-8 text-sm">
+            <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+            <a href="services.html" class="text-slate-300 hover:text-white transition">Services</a>
+            <a href="pricing.html" class="text-slate-100">Pricing</a>
+            <a href="portfolio.html" class="text-slate-300 hover:text-white transition">Portfolio</a>
+            <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+            <a
+              href="contact.html"
+              class="inline-flex items-center gap-2 rounded-full bg-haven-blue px-4 py-2 text-xs font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+            >
+              Start Your Website
+            </a>
+          </nav>
+
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-700 p-2 text-slate-200 hover:bg-slate-800/60"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav
+        id="mobile-menu"
+        class="md:hidden hidden border-t border-slate-800 bg-slate-950/95"
+      >
+        <div class="px-4 py-3 space-y-2 text-sm">
+          <a href="index.html" class="block py-1 text-slate-300">Home</a>
+          <a href="services.html" class="block py-1 text-slate-300">Services</a>
+          <a href="pricing.html" class="block py-1 text-slate-100">Pricing</a>
+          <a href="portfolio.html" class="block py-1 text-slate-300">Portfolio</a>
+          <a href="contact.html" class="block py-1 text-slate-300">Contact</a>
+          <a
+            href="contact.html"
+            class="mt-2 inline-flex w-full items-center justify-center rounded-full bg-haven-blue px-4 py-2 text-xs font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+          >
+            Start Your Website
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex-1">
+      <!-- Page header -->
+      <section class="bg-[radial-gradient(circle_at_top,_#1E293B,_transparent_55%)] border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 text-center">
+          <p class="text-[11px] uppercase tracking-[0.2em] text-haven-aqua mb-2">Pricing</p>
+          <h1 class="text-3xl sm:text-4xl font-semibold mb-3">Simple, predictable monthly pricing.</h1>
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+            One main plan that covers your website, hosting, updates and support – so you always know what you’re paying,
+            and what you’re getting.
+          </p>
+        </div>
+      </section>
+
+      <!-- Main pricing card -->
+      <section class="bg-slate-950/90 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="rounded-3xl border border-slate-800 bg-slate-950/80 p-6 sm:p-8 shadow-xl shadow-black/40">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+              <div>
+                <p class="text-xs font-semibold text-haven-aqua uppercase tracking-wide mb-1">Web Haven Plan</p>
+                <p class="text-[11px] text-slate-400">
+                  Ideal for most small businesses and service-based companies.
+                </p>
+              </div>
+              <div class="text-left sm:text-right">
+                <div class="flex items-baseline gap-1 justify-start sm:justify-end">
+                  <span class="text-3xl sm:text-4xl font-semibold text-white">£XX</span>
+                  <span class="text-xs text-slate-400">/month</span>
+                </div>
+                <p class="text-[11px] text-slate-400">
+                  No upfront build fee for a limited number of clients.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6 mb-6">
+              <div class="space-y-2 text-xs text-slate-200">
+                <p class="text-[11px] font-semibold text-slate-300 uppercase tracking-wide">Included</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+                    <span>Full website design & build (typically up to X pages – home, services, about, contact, etc.).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+                    <span>Managed hosting, security updates and backups.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+                    <span>Reasonable content changes each month (text, photos, opening hours, etc.).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+                    <span>Basic on-page SEO setup and structure.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="space-y-2 text-xs text-slate-200">
+                <p class="text-[11px] font-semibold text-slate-300 uppercase tracking-wide">Fair use & notes</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-slate-400"></span>
+                    <span>
+                      “Reasonable changes” means small updates, not a full redesign every month. If a bigger project
+                      is needed, we’ll discuss options first.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-slate-400"></span>
+                    <span>
+                      Domain name cost is usually separate (you can keep control of it), but we’ll help you set it up or transfer it.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-slate-400"></span>
+                    <span>
+                      If you need something larger or more complex, we can quote a custom plan.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <a
+                href="contact.html"
+                class="inline-flex items-center justify-center rounded-full bg-haven-blue px-5 py-2.5 text-sm font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+              >
+                Talk about your website
+              </a>
+              <p class="text-[11px] text-slate-400">
+                Once you’ve settled on a final monthly price and what “reasonable changes” means for you, we can tweak this text
+                to match your exact terms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Optional extras / future tiers -->
+      <section class="bg-haven-navy">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="max-w-3xl mb-8">
+            <h2 class="text-2xl font-semibold mb-3">Growing beyond the basics</h2>
+            <p class="text-sm text-slate-300">
+              As WebHaven grows, you might introduce different plans for different types of clients – for example,
+              a higher tier for larger sites or more frequent updates. For now, one clear plan keeps your offer simple.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 text-xs text-slate-300">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <p class="font-medium text-sm mb-2">Larger website projects</p>
+              <p>
+                For bigger sites with more pages or advanced functionality, you can quote a custom build fee or a higher monthly rate.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <p class="font-medium text-sm mb-2">High-change businesses</p>
+              <p>
+                If a client needs constant updates, you could create a higher plan that includes more frequent content changes.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <p class="font-medium text-sm mb-2">Add-on services</p>
+              <p>
+                Things like blog writing, ad landing pages or advanced SEO could be offered as add-ons when you’re ready.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10 rounded-2xl border border-slate-800 bg-slate-950/80 p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p class="text-xs text-slate-300 max-w-xl">
+              Not sure what to charge yet? Start with a fair monthly price for your local market, then adjust over time
+              as you get more experience and see what clients find most valuable.
+            </p>
+            <a
+              href="contact.html"
+              class="inline-flex items-center justify-center rounded-full bg-slate-100 px-5 py-2.5 text-xs sm:text-sm font-medium text-slate-900 hover:bg-white transition"
+            >
+              Ask a question about pricing
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <p>© <span id="year"></span> Web Haven. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="privacy.html" class="hover:text-slate-200">Privacy</a>
+          <a href="contact.html" class="hover:text-slate-200">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+      });
+    }
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
