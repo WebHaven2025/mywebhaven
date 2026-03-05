@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rapid Response Electric</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          bg: '#111111',
+          panel: '#1C1C1C',
+          red: '#DC2626',
+          redsoft: '#F87171',
+          textsoft: '#B3B3B3'
+        }
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg-brand-bg text-white antialiased">
+
+<!-- Emergency Top Bar -->
+<div class="bg-brand-red text-white text-center py-3 text-sm font-bold tracking-wide">
+  24/7 EMERGENCY ELECTRICIAN • CALL NOW: 0800 123 456
+</div>
+
+<!-- Header -->
+<header class="bg-brand-panel border-b border-neutral-800">
+  <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Rapid Response Electric</h1>
+    <a href="tel:0800123456"
+       class="bg-brand-red px-6 py-2 rounded-full font-bold hover:brightness-110 transition shadow-lg shadow-red-500/30">
+       Call Now
+    </a>
+  </div>
+</header>
+
+<!-- Hero (Different Structure: Large Left-Aligned Content) -->
+<section class="py-28 bg-gradient-to-r from-brand-bg to-black">
+  <div class="max-w-6xl mx-auto px-10 grid md:grid-cols-2 gap-16 items-center">
+
+    <div>
+      <h2 class="text-6xl font-extrabold leading-tight mb-6">
+        Emergency<br>Electrician<br>24/7
+      </h2>
+      <p class="text-brand-textsoft text-lg mb-8">
+        Fast, reliable electrical repairs and fault diagnosis across the UK.
+        When you need urgent assistance, we respond immediately.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="tel:0800123456"
+           class="bg-brand-red px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition shadow-lg shadow-red-500/40">
+           Call 0800 123 456
+        </a>
+        <a href="#services"
+           class="border border-brand-red text-brand-red px-8 py-4 rounded-full font-bold hover:bg-brand-red hover:text-white transition">
+           Our Services
+        </a>
+      </div>
+    </div>
+
+    <!-- Right side urgency block -->
+    <div class="bg-brand-panel p-12 rounded-3xl border border-neutral-800 text-center">
+      <div class="text-brand-red text-5xl font-extrabold mb-4">
+        ⚡
+      </div>
+      <p class="text-lg font-semibold mb-3">
+        Average Response Time
+      </p>
+      <p class="text-4xl font-extrabold text-brand-red">
+        45 Minutes
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Services (Stacked Blocks) -->
+<section id="services" class="bg-brand-panel py-24 border-t border-neutral-800">
+  <div class="max-w-6xl mx-auto px-10">
+
+    <h3 class="text-4xl font-bold text-center mb-16">
+      Emergency Electrical Services
+    </h3>
+
+    <div class="space-y-10 text-lg">
+
+      <div class="flex flex-col md:flex-row justify-between border-b border-neutral-800 pb-6">
+        <span class="font-bold text-brand-red">Power Outages</span>
+        <span class="text-brand-textsoft">Immediate fault diagnosis and restoration.</span>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between border-b border-neutral-800 pb-6">
+        <span class="font-bold text-brand-red">Electrical Fault Finding</span>
+        <span class="text-brand-textsoft">Rapid identification of wiring and circuit issues.</span>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between border-b border-neutral-800 pb-6">
+        <span class="font-bold text-brand-red">Consumer Unit Issues</span>
+        <span class="text-brand-textsoft">Safe and compliant emergency repairs.</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Urgency CTA Section -->
+<section class="bg-brand-red text-white py-20 text-center">
+  <h3 class="text-4xl font-extrabold mb-6">
+    Electrical Emergency?
+  </h3>
+  <p class="text-lg mb-8">
+    Don’t wait. Speak directly to an engineer now.
+  </p>
+  <a href="tel:0800123456"
+     class="bg-black px-10 py-4 rounded-full font-bold text-brand-red hover:opacity-90 transition">
+     Call 0800 123 456
+  </a>
+</section>
+
+<footer class="bg-brand-bg py-10 text-center text-xs text-brand-textsoft">
+  © 2025 Rapid Response Electric • Demo project built by WebHaven
+</footer>
+
+</body>
+</html>

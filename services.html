@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services – WebHaven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="WebHaven services built specifically for UK electricians. Website design, hosting, local search structure and ongoing support to generate more local enquiries."
+  />
+
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            haven: {
+              navy: '#0F172A',
+              blue: '#2563EB',
+              aqua: '#06B6D4',
+              teal: '#14B8A6',
+              yellow: '#FACC15',
+              soft: '#F8FAFC',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-haven-navy text-slate-100 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER / NAV -->
+    <header class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-haven-blue via-haven-aqua to-haven-teal flex items-center justify-center shadow-lg shadow-haven-blue/40">
+              <span class="font-semibold text-sm tracking-tight">WH</span>
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span class="font-semibold text-sm sm:text-base">WebHaven</span>
+              <span class="text-[11px] text-slate-400 hidden sm:inline">Websites built exclusively for UK electricians.</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <nav class="hidden md:flex items-center gap-8 text-sm">
+            <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+            <a href="services.html" class="text-slate-100">Services</a>
+            <a href="pricing.html" class="text-slate-300 hover:text-white transition">Pricing</a>
+            <a href="portfolio.html" class="text-slate-300 hover:text-white transition">Portfolio</a>
+            <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+            <a
+              href="contact.html"
+              class="inline-flex items-center gap-2 rounded-full bg-haven-blue px-4 py-2 text-xs font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+            >
+              Start Your Website
+            </a>
+          </nav>
+
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-700 p-2 text-slate-200 hover:bg-slate-800/60"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav
+        id="mobile-menu"
+        class="md:hidden hidden border-t border-slate-800 bg-slate-950/95"
+      >
+        <div class="px-4 py-3 space-y-2 text-sm">
+          <a href="index.html" class="block py-1 text-slate-300">Home</a>
+          <a href="services.html" class="block py-1 text-slate-100">Services</a>
+          <a href="pricing.html" class="block py-1 text-slate-300">Pricing</a>
+          <a href="portfolio.html" class="block py-1 text-slate-300">Portfolio</a>
+          <a href="contact.html" class="block py-1 text-slate-300">Contact</a>
+          <a
+            href="contact.html"
+            class="mt-2 inline-flex w-full items-center justify-center rounded-full bg-haven-blue px-4 py-2 text-xs font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+          >
+            Start Your Website
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex-1">
+      <!-- Page header -->
+      <section class="bg-[radial-gradient(circle_at_top,_#1E293B,_transparent_55%)] border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="max-w-3xl">
+            <p class="text-[11px] uppercase tracking-[0.2em] text-haven-aqua mb-2">Services</p>
+            <h1 class="text-3xl sm:text-4xl font-semibold mb-3">Professional websites built exclusively for electricians.</h1>
+            <p class="text-sm sm:text-base text-slate-300">
+              WebHaven takes care of the full picture – from the first design ideas through to hosting,
+              updates and ongoing support – so you don’t have to juggle multiple providers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core services -->
+      <section class="bg-slate-950/90 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="grid md:grid-cols-2 gap-8 mb-10">
+            <div>
+              <h2 class="text-2xl font-semibold mb-3">Core services</h2>
+              <p class="text-sm text-slate-300">
+                Every WebHaven project includes the essentials to get your business online properly –
+                not a generic template, but a site shaped around your brand and customers.
+              </p>
+            </div>
+            <p class="text-xs text-slate-400">
+              Don’t worry if you’re not sure what you need yet. We’ll walk through your business and suggest
+              a sensible structure that fits where you’re at now and where you’re heading.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Service 1 -->
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <p class="text-xs font-semibold text-haven-aqua uppercase tracking-wide mb-1">Website design & build</p>
+              <h3 class="font-medium mb-2 text-sm">A professional website that reflects the standard of your work.</h3>
+              <p class="text-xs text-slate-300 mb-3">
+                We design electrician-focused websites that clearly communicate what you do, where you work, and why customers should trust you. The layout, structure and messaging are shaped around how electricians win work locally.
+              </p>
+              <ul class="space-y-1.5 text-[11px] text-slate-300">
+                <li>• Structured around your core services (rewires, EV chargers, consumer units, fault finding, inspections)</li>
+                <li>• Clear trust signals (NICEIC / NAPIT, insurance, qualifications, experience)</li>
+                <li>• Mobile-first design with visible call buttons</li>
+				<li>• Clean, fast-loading and easy to navigate</li>
+              </ul>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <p class="text-xs font-semibold text-haven-aqua uppercase tracking-wide mb-1">Hosting & Technical Management</p>
+              <h3 class="font-medium mb-2 text-sm">Handled quietly in the background.</h3>
+              <p class="text-xs text-slate-300 mb-3">
+                We manage the technical side so you don’t have to think about it. Your website stays online, secure and maintained — without you touching a control panel.
+              </p>
+              <ul class="space-y-1.5 text-[11px] text-slate-300">
+                <li>• Managed hosting</li>
+                <li>• SSL security (padlock in browser)</li>
+                <li>• Domain connection or transfer support</li>
+				<li>• Performance and uptime monitoring</li>
+              </ul>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <p class="text-xs font-semibold text-haven-aqua uppercase tracking-wide mb-1">Ongoing Updates & Content Changes</p>
+              <h3 class="font-medium mb-2 text-sm">Because your business doesn’t stand still.</h3>
+              <p class="text-xs text-slate-300 mb-3">
+                As your services expand or coverage areas change, your website should evolve with you. Instead of fighting with a website builder, you simply send us what needs updating.
+              </p>
+              <ul class="space-y-1.5 text-[11px] text-slate-300">
+                <li>• Add new services or service areas</li>
+                <li>• Update project photos or testimonials</li>
+                <li>• Refine wording or restructure pages</li>
+				<li>• Keep information accurate and current</li>
+              </ul>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <p class="text-xs font-semibold text-haven-aqua uppercase tracking-wide mb-1">Local Structure & Search Foundations</p>
+              <h3 class="font-medium mb-2 text-sm">Built to support visibility in your area.</h3>
+              <p class="text-xs text-slate-300 mb-3">
+                We structure your site to support searches such as:
+				“Electrician in [Your Area]”
+				“Emergency electrician [Your Area]”
+				“EV charger installation [Your Area]”
+              </p>
+              <ul class="space-y-1.5 text-[11px] text-slate-300">
+                <li>• Clear page hierarchy</li>
+                <li>• Dedicated service pages</li>
+                <li>• Service area targeting</li>
+				<li>• Proper page titles and meta descriptions</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Optional add-ons -->
+      <section class="bg-haven-navy">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="max-w-3xl mb-8">
+            <h2 class="text-2xl font-semibold mb-3">Extras you can grow into</h2>
+            <p class="text-sm text-slate-300">
+              You don’t have to start with everything on day one. As your business grows, we can layer on additional
+              features when they’re worth the investment.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <h3 class="font-medium mb-2 text-sm">Blog or news area</h3>
+              <p class="text-xs text-slate-300">
+                Share updates, articles or case studies to build trust and improve search visibility over time.
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <h3 class="font-medium mb-2 text-sm">Extra landing pages</h3>
+              <p class="text-xs text-slate-300">
+                Dedicated pages for specific services, locations or campaigns to increase enquiries.
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+              <h3 class="font-medium mb-2 text-sm">Integrations & forms</h3>
+              <p class="text-xs text-slate-300">
+                Connect enquiry forms to email, calendars or simple CRM tools to keep track of leads.
+              </p>
+            </article>
+          </div>
+
+          <div class="mt-10 rounded-2xl border border-slate-800 bg-slate-950/80 p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p class="text-xs text-slate-300 max-w-xl">
+              Not sure which pieces you actually need? We’ll always start with the simplest version that does the job,
+              then add extras only when they’ll genuinely help.
+            </p>
+            <a
+              href="contact.html"
+              class="inline-flex items-center justify-center rounded-full bg-haven-blue px-5 py-2.5 text-xs sm:text-sm font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+            >
+              Chat about what you need
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <p>© <span id="year"></span> WebHaven. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="privacy.html" class="hover:text-slate-200">Privacy</a>
+          <a href="contact.html" class="hover:text-slate-200">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+      });
+    }
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>

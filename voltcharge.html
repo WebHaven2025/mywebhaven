@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VoltCharge Installations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          dark: '#0D1117',
+          panel: '#161B22',
+          green: '#22C55E',
+          soft: '#9CA3AF'
+        }
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg-brand-dark text-white antialiased">
+
+<!-- Minimal Header -->
+<header class="absolute top-0 w-full z-20">
+  <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+    <h1 class="text-lg font-semibold tracking-wide">VoltCharge</h1>
+    <a href="#contact" class="border border-brand-green text-brand-green px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand-green hover:text-black transition">
+      Book Installation
+    </a>
+  </div>
+</header>
+
+<!-- Split Hero -->
+<section class="min-h-screen grid md:grid-cols-2">
+
+  <!-- Left Content -->
+  <div class="flex flex-col justify-center px-10 md:px-16 bg-brand-dark">
+    <h2 class="text-5xl font-extrabold leading-tight mb-6">
+      EV Charging <br> Made Simple
+    </h2>
+    <p class="text-brand-soft text-lg mb-8 max-w-md">
+      Professional EV charger installations for homes and businesses across the UK.
+      Clean installs. Certified engineers. Future-ready infrastructure.
+    </p>
+
+    <div class="flex gap-4">
+      <a href="#contact"
+         class="bg-brand-green text-black px-8 py-3 rounded-full font-bold hover:brightness-110 transition shadow-lg shadow-green-500/30">
+        Get a Quote
+      </a>
+      <a href="#services"
+         class="text-brand-green font-semibold underline underline-offset-4">
+        View Services
+      </a>
+    </div>
+  </div>
+
+  <!-- Right Visual Block -->
+  <div class="bg-gradient-to-br from-brand-panel to-black flex items-center justify-center">
+    <div class="text-center">
+      <div class="w-40 h-40 border-4 border-brand-green rounded-full flex items-center justify-center text-brand-green text-4xl font-bold shadow-[0_0_30px_#22C55E]">
+        ⚡
+      </div>
+      <p class="mt-6 text-brand-soft text-sm tracking-wide">
+        Smart • Certified • OZEV Approved
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Services Horizontal Section -->
+<section id="services" class="bg-brand-panel py-24">
+  <div class="max-w-6xl mx-auto px-10">
+
+    <div class="grid md:grid-cols-3 gap-16 text-base">
+
+      <div>
+        <h3 class="text-brand-green text-2xl font-bold mb-4">Home Charging</h3>
+        <p class="text-brand-soft">
+          Fast installation of smart EV chargers with full compliance and certification.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-brand-green text-2xl font-bold mb-4">Commercial Install</h3>
+        <p class="text-brand-soft">
+          Workplace and fleet charging infrastructure designed for long-term scalability.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-brand-green text-2xl font-bold mb-4">Grant Assistance</h3>
+        <p class="text-brand-soft">
+          Guidance through OZEV grants and funding eligibility.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Process Section (Different layout again) -->
+<section class="bg-brand-dark py-24">
+  <div class="max-w-5xl mx-auto px-10 text-center">
+    <h3 class="text-4xl font-bold mb-12">Our Installation Process</h3>
+
+    <div class="grid md:grid-cols-3 gap-12 text-brand-soft text-sm">
+
+      <div>
+        <div class="text-brand-green text-3xl font-bold mb-4">01</div>
+        Site Assessment
+      </div>
+
+      <div>
+        <div class="text-brand-green text-3xl font-bold mb-4">02</div>
+        Certified Installation
+      </div>
+
+      <div>
+        <div class="text-brand-green text-3xl font-bold mb-4">03</div>
+        Testing & Certification
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="bg-brand-green text-black py-20 text-center">
+  <h3 class="text-3xl font-bold mb-6">Ready To Go Electric?</h3>
+  <a href="#" class="bg-black text-brand-green px-10 py-3 rounded-full font-bold hover:opacity-90 transition">
+    Request Installation
+  </a>
+</section>
+
+<footer class="bg-brand-dark py-10 text-center text-xs text-brand-soft">
+  © 2025 VoltCharge Installations • Demo project built by WebHaven
+</footer>
+
+</body>
+</html>

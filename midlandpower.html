@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Midland Power Electrical</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Midland Power Electrical – Professional domestic and commercial electricians serving the UK. Certified, insured and reliable.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          bg: '#121212',
+          panel: '#1E1E1E',
+          primary: '#F97316',     /* Strong Orange */
+          accent: '#FDBA74',      /* Light Amber */
+          textsoft: '#A3A3A3'
+        }
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg-brand-bg text-white antialiased">
+
+<!-- Top Bar -->
+<div class="bg-brand-primary text-black text-xs text-center py-2 font-semibold tracking-wide">
+  NICEIC Registered • Fully Insured • Domestic & Commercial Specialists
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-40 bg-brand-panel border-b border-neutral-800">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+    <div>
+      <h1 class="text-xl font-bold">Midland Power Electrical</h1>
+      <p class="text-xs text-brand-textsoft">Professional UK Electricians</p>
+    </div>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#services" class="text-brand-textsoft hover:text-white transition">Services</a>
+      <a href="#areas" class="text-brand-textsoft hover:text-white transition">Areas</a>
+      <a href="#contact" class="bg-brand-primary px-5 py-2 rounded-full font-semibold hover:brightness-110 transition shadow-lg shadow-orange-500/30">
+        Get a Quote
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="bg-gradient-to-b from-brand-panel to-brand-bg py-28">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-5xl font-extrabold mb-6 leading-tight">
+      Reliable Electrical Services Across the UK
+    </h2>
+    <p class="text-lg text-brand-textsoft max-w-2xl mx-auto mb-10">
+      Certified electricians delivering safe, compliant and efficient domestic and commercial electrical work with transparent pricing and rapid response times.
+    </p>
+    <div class="flex justify-center gap-5">
+      <a href="#contact" class="bg-brand-primary px-8 py-3 rounded-full text-sm font-bold hover:brightness-110 transition shadow-lg shadow-orange-500/30">
+        Request a Quote
+      </a>
+      <a href="#services" class="border border-brand-accent text-brand-accent px-8 py-3 rounded-full text-sm font-bold hover:bg-brand-accent hover:text-black transition">
+        View Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust -->
+<section class="py-12 bg-brand-bg border-t border-neutral-800">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-sm font-semibold">
+    <div class="text-brand-accent">✔ NICEIC Registered</div>
+    <div class="text-brand-accent">✔ Fully Insured</div>
+    <div class="text-brand-accent">✔ Part P Compliant</div>
+    <div class="text-brand-accent">✔ 15+ Years Experience</div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-24 bg-brand-panel border-t border-neutral-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-16">Our Electrical Services</h3>
+
+    <div class="grid md:grid-cols-3 gap-10 text-base">
+
+      <div class="bg-brand-bg p-8 rounded-2xl border border-neutral-700 hover:border-brand-primary transition">
+        <h4 class="font-bold text-xl mb-4 text-brand-primary">Domestic Installations</h4>
+        <p class="text-brand-textsoft">
+          Full and partial rewires, consumer unit upgrades, lighting installations and EICR safety inspections.
+        </p>
+      </div>
+
+      <div class="bg-brand-bg p-8 rounded-2xl border border-neutral-700 hover:border-brand-primary transition">
+        <h4 class="font-bold text-xl mb-4 text-brand-primary">EV Charger Installations</h4>
+        <p class="text-brand-textsoft">
+          Supply and installation of home and commercial EV charging points with full certification.
+        </p>
+      </div>
+
+      <div class="bg-brand-bg p-8 rounded-2xl border border-neutral-700 hover:border-brand-primary transition">
+        <h4 class="font-bold text-xl mb-4 text-brand-primary">Commercial Electrical Work</h4>
+        <p class="text-brand-textsoft">
+          Office fit-outs, maintenance contracts, emergency lighting and compliance testing.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Areas -->
+<section id="areas" class="py-24 bg-brand-bg border-t border-neutral-800">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-10">Areas Covered</h3>
+    <div class="grid sm:grid-cols-3 gap-5 text-base font-semibold">
+      <div class="bg-brand-panel p-4 rounded-xl">Birmingham</div>
+      <div class="bg-brand-panel p-4 rounded-xl">Manchester</div>
+      <div class="bg-brand-panel p-4 rounded-xl">Leeds</div>
+      <div class="bg-brand-panel p-4 rounded-xl">Nottingham</div>
+      <div class="bg-brand-panel p-4 rounded-xl">Sheffield</div>
+      <div class="bg-brand-panel p-4 rounded-xl">Derby</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-24 bg-brand-panel border-t border-neutral-800">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-14">Client Feedback</h3>
+    <div class="grid md:grid-cols-2 gap-8 text-base">
+      <div class="bg-brand-bg p-8 rounded-2xl border border-neutral-700">
+        “Professional from start to finish. Clear pricing and excellent workmanship.”
+        <div class="mt-5 text-sm text-brand-accent font-semibold">– Commercial Client (Demo)</div>
+      </div>
+      <div class="bg-brand-bg p-8 rounded-2xl border border-neutral-700">
+        “Quick response and very reliable service. Highly recommended.”
+        <div class="mt-5 text-sm text-brand-accent font-semibold">– Domestic Client (Demo)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="py-28 bg-gradient-to-r from-brand-primary/20 to-brand-accent/20 border-t border-neutral-800">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-6">Request a Free Quote</h3>
+    <p class="text-lg text-brand-textsoft mb-10">
+      Speak with our team today to discuss your electrical requirements.
+    </p>
+    <a href="#" class="bg-brand-primary px-10 py-4 rounded-full text-base font-bold hover:brightness-110 transition shadow-lg shadow-orange-500/30">
+      Contact Midland Power
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-brand-bg border-t border-neutral-800 py-10 text-sm text-brand-textsoft text-center">
+  © 2025 Midland Power Electrical • Demonstration project built by WebHaven
+</footer>
+
+</body>
+</html>

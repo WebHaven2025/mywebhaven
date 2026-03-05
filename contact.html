@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – WebHaven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Request your electrician website plan from WebHaven. Professional websites built exclusively for UK electricians."
+  />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            haven: {
+              navy: '#0F172A',
+              blue: '#2563EB',
+              aqua: '#06B6D4',
+              teal: '#14B8A6',
+              yellow: '#FACC15',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-haven-navy text-slate-100 antialiased">
+<div class="min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-haven-blue via-haven-aqua to-haven-teal flex items-center justify-center shadow-lg shadow-haven-blue/40">
+            <span class="font-semibold text-sm tracking-tight">WH</span>
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="font-semibold text-sm sm:text-base">WebHaven</span>
+            <span class="text-[11px] text-slate-400 hidden sm:inline">
+              Websites built exclusively for UK electricians.
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+          <a href="services.html" class="text-slate-300 hover:text-white transition">Services</a>
+          <a href="pricing.html" class="text-slate-300 hover:text-white transition">Pricing</a>
+          <a href="portfolio.html" class="text-slate-300 hover:text-white transition">Portfolio</a>
+          <a href="contact.html" class="text-slate-100">Contact</a>
+          <a href="contact.html"
+             class="inline-flex items-center gap-2 rounded-full bg-haven-blue px-4 py-2 text-xs font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition">
+            Start Your Website
+          </a>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-1">
+
+    <!-- Page Header -->
+    <section class="bg-[radial-gradient(circle_at_top,_#1E293B,_transparent_55%)] border-b border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+        <p class="text-[11px] uppercase tracking-[0.2em] text-haven-aqua mb-2">Get Started</p>
+        <h1 class="text-3xl sm:text-4xl font-semibold mb-4">
+          Get your electrician website plan.
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+          Tell us about your services and coverage areas.
+          We’ll outline a clear structure tailored specifically to your electrical business.
+        </p>
+        <p class="text-[11px] text-slate-400 mt-4">
+          All plans include a 12-month minimum agreement.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-slate-950/90 border-b border-slate-800">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 sm:p-8 shadow-xl shadow-black/40">
+
+          <form action="https://formspree.io/f/mreawzyw" method="POST" class="space-y-5 text-sm">
+
+            <!-- Hidden fields -->
+            <input type="hidden" name="_subject" value="New WebHaven Electrician Enquiry">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-200 mb-1">Your name</label>
+                <input type="text" name="name" required
+                  class="w-full rounded-xl border border-slate-700 bg-slate-950/80 px-4 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-haven-aqua focus:border-haven-aqua"
+                  placeholder="e.g. Sarah Smith">
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-200 mb-1">Business name</label>
+                <input type="text" name="business" required
+                  class="w-full rounded-xl border border-slate-700 bg-slate-950/80 px-4 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-haven-aqua focus:border-haven-aqua"
+                  placeholder="e.g. Smith Electrical">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-200 mb-1">Email</label>
+                <input type="email" name="email" required
+                  class="w-full rounded-xl border border-slate-700 bg-slate-950/80 px-4 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-haven-aqua focus:border-haven-aqua"
+                  placeholder="you@example.com">
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-200 mb-1">Phone (optional)</label>
+                <input type="tel" name="phone"
+                  class="w-full rounded-xl border border-slate-700 bg-slate-950/80 px-4 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-haven-aqua focus:border-haven-aqua"
+                  placeholder="Your number">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-200 mb-1">Services you offer</label>
+              <textarea name="services" rows="3" required
+                class="w-full rounded-xl border border-slate-700 bg-slate-950/80 px-4 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-haven-aqua focus:border-haven-aqua"
+                placeholder="e.g. EV charger installs, rewires, inspections..."></textarea>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-200 mb-1">Areas you cover</label>
+              <input type="text" name="areas" required
+                class="w-full rounded-xl border border-slate-700 bg-slate-950/80 px-4 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-haven-aqua focus:border-haven-aqua"
+                placeholder="e.g. Stoke-on-Trent, Staffordshire">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-200 mb-1">Current website (optional)</label>
+              <input type="url" name="website"
+                class="w-full rounded-xl border border-slate-700 bg-slate-950/80 px-4 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-haven-aqua focus:border-haven-aqua"
+                placeholder="https://">
+            </div>
+
+            <button type="submit"
+              class="w-full inline-flex items-center justify-center rounded-full bg-haven-blue px-6 py-3 text-sm font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition">
+              Request Website Plan
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-[11px] text-slate-400 text-center">
+      © <span id="year"></span> WebHaven. All rights reserved.
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pricing – WebHaven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Transparent monthly pricing for electrician websites. WebHaven builds, hosts and manages professional websites exclusively for UK electricians."
+  />
+
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            haven: {
+              navy: '#0F172A',
+              blue: '#2563EB',
+              aqua: '#06B6D4',
+              teal: '#14B8A6',
+              yellow: '#FACC15',
+              soft: '#F8FAFC',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-haven-navy text-slate-100 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER / NAV -->
+    <header class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-haven-blue via-haven-aqua to-haven-teal flex items-center justify-center shadow-lg shadow-haven-blue/40">
+              <span class="font-semibold text-sm tracking-tight">WH</span>
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span class="font-semibold text-sm sm:text-base">WebHaven</span>
+              <span class="text-[11px] text-slate-400 hidden sm:inline">Websites built exclusively for UK electricians.</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <nav class="hidden md:flex items-center gap-8 text-sm">
+            <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+            <a href="services.html" class="text-slate-300 hover:text-white transition">Services</a>
+            <a href="pricing.html" class="text-slate-100">Pricing</a>
+            <a href="portfolio.html" class="text-slate-300 hover:text-white transition">Portfolio</a>
+            <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+            <a
+              href="contact.html"
+              class="inline-flex items-center gap-2 rounded-full bg-haven-blue px-4 py-2 text-xs font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+            >
+              Start Your Website
+            </a>
+          </nav>
+
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-700 p-2 text-slate-200 hover:bg-slate-800/60"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav
+        id="mobile-menu"
+        class="md:hidden hidden border-t border-slate-800 bg-slate-950/95"
+      >
+        <div class="px-4 py-3 space-y-2 text-sm">
+          <a href="index.html" class="block py-1 text-slate-300">Home</a>
+          <a href="services.html" class="block py-1 text-slate-300">Services</a>
+          <a href="pricing.html" class="block py-1 text-slate-100">Pricing</a>
+          <a href="portfolio.html" class="block py-1 text-slate-300">Portfolio</a>
+          <a href="contact.html" class="block py-1 text-slate-300">Contact</a>
+          <a
+            href="contact.html"
+            class="mt-2 inline-flex w-full items-center justify-center rounded-full bg-haven-blue px-4 py-2 text-xs font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition"
+          >
+            Start Your Website
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex-1">
+      <!-- Page header -->
+      <section class="bg-[radial-gradient(circle_at_top,_#1E293B,_transparent_55%)] border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 text-center">
+          <p class="text-[11px] uppercase tracking-[0.2em] text-haven-aqua mb-2">Pricing</p>
+          <h1 class="text-3xl sm:text-4xl font-semibold mb-3">Clear monthly pricing for electrician websites.</h1>
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+            Professional websites built and managed for UK electricians — with a 12-month commitment.
+          </p>
+        </div>
+      </section>
+
+<section class="bg-slate-950/90 border-b border-slate-800">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- STARTER PLAN -->
+      <div class="rounded-3xl border border-slate-800 bg-slate-950/80 p-6 sm:p-8 shadow-xl shadow-black/40 flex flex-col">
+        <div class="mb-6">
+          <p class="text-xs font-semibold text-haven-aqua uppercase tracking-wide mb-1">
+            WebHaven Starter
+          </p>
+          <p class="text-[11px] text-slate-400">
+            Ideal for sole traders or electricians covering a focused area.
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-baseline gap-1">
+            <span class="text-3xl sm:text-4xl font-semibold text-white">£99</span>
+            <span class="text-xs text-slate-400">/month</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-1">
+            12-month minimum agreement.
+          </p>
+        </div>
+
+        <ul class="space-y-3 text-xs text-slate-200 mb-6 flex-1">
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Professional website design & build (up to 4 pages).</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Core electrician service structure.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Managed hosting, SSL security & backups.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Local search foundation setup.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Reasonable monthly content updates.</span>
+          </li>
+        </ul>
+
+        <a href="contact.html"
+           class="inline-flex items-center justify-center rounded-full bg-haven-blue px-5 py-2.5 text-sm font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition">
+          Get Started
+        </a>
+      </div>
+
+
+      <!-- PRO PLAN -->
+      <div class="rounded-3xl border border-haven-blue bg-slate-950/90 p-6 sm:p-8 shadow-xl shadow-haven-blue/20 flex flex-col relative">
+        
+        <div class="absolute -top-3 right-6 bg-haven-blue text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-wide">
+          Most Popular
+        </div>
+
+        <div class="mb-6">
+          <p class="text-xs font-semibold text-haven-aqua uppercase tracking-wide mb-1">
+            WebHaven Pro
+          </p>
+          <p class="text-[11px] text-slate-400">
+            For established electricians covering wider areas or multiple services.
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-baseline gap-1">
+            <span class="text-3xl sm:text-4xl font-semibold text-white">£149</span>
+            <span class="text-xs text-slate-400">/month</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-1">
+            12-month minimum agreement.
+          </p>
+        </div>
+
+        <ul class="space-y-3 text-xs text-slate-200 mb-6 flex-1">
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Everything in Starter.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Up to 8 pages including dedicated service pages.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Expanded service area targeting.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Priority content updates.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-haven-yellow"></span>
+            <span>Scalable structure for future growth.</span>
+          </li>
+        </ul>
+
+        <a href="contact.html"
+           class="inline-flex items-center justify-center rounded-full bg-haven-blue px-5 py-2.5 text-sm font-medium text-white shadow-md shadow-haven-blue/50 hover:bg-haven-blue/90 transition">
+          Choose Pro
+        </a>
+      </div>
+
+    </div>
+
+    <div class="mt-10 text-center text-[11px] text-slate-400 max-w-3xl mx-auto">
+      <p>
+        Both plans include a 12-month minimum agreement, monthly payments and ongoing hosting & support.
+        We take on a limited number of new electrician websites each month to maintain quality and delivery standards.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-haven-navy">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+    <div class="max-w-3xl mb-10">
+      <h2 class="text-2xl font-semibold mb-3">Frequently asked questions</h2>
+      <p class="text-sm text-slate-300">
+        A few common questions electricians ask before getting started.
+      </p>
+    </div>
+
+    <div class="space-y-8 text-sm text-slate-300">
+
+      <div>
+        <h3 class="font-medium text-white mb-2">Is there a minimum contract?</h3>
+        <p>
+          Yes. All plans include a 12-month minimum agreement. This allows us to build your site properly
+          and support it long-term rather than treating it as a short-term project.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-medium text-white mb-2">Do I pay anything upfront?</h3>
+        <p>
+          For most electrician websites, there is no upfront build fee. You simply start your monthly plan.
+          If your project is larger or more complex, we’ll discuss this clearly beforehand.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-medium text-white mb-2">What happens after 12 months?</h3>
+        <p>
+          After the initial 12-month term, your plan continues monthly. You’re not locked into another
+          long fixed contract.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-medium text-white mb-2">Can I keep my domain name?</h3>
+        <p>
+          Yes. You remain in control of your domain. We can help you connect or transfer it,
+          but ownership stays with you.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <p>© <span id="year"></span> WebHaven. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="privacy.html" class="hover:text-slate-200">Privacy</a>
+          <a href="contact.html" class="hover:text-slate-200">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+      });
+    }
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
